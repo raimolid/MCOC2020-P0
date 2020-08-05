@@ -2,39 +2,37 @@
 
 # Mi computador principal
 
-* Marca/modelo: System 76 Serval WS
+* Marca/modelo: HP Pavilion 15-cw1007la
 * Tipo: Notebook
-* Año adquisición: 2015
+* Año adquisición: 2020
 * Procesador:
-  * Marca/Modelo: Intel Core i7-4790K
-  * Velocidad Base: 4.00 GHz
-  * Velocidad Máxima: 4.40 GHz
+  * Marca/Modelo: AMD Ryzen 7 3700U
+  * Velocidad Base: 2.3 GHz
+  * Velocidad Máxima: 2.3 GHz
   * Numero de núcleos: 4 
-  * Humero de hilos: 2
+  * Humero de hilos: 8
   * Arquitectura: x86_64
-  * Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
 * Tamaño de las cachés del procesador
-  * L1d: 32KB
-  * L1i: 32KB
-  * L2: 256KB
-  * L3: 8192KB
+  * L1: 384 KB
+  * L2: 2 MB
+  * L3: 4 MB
 * Memoria 
-  * Total: 32 GB
-  * Tipo memoria: DDR3
-  * Velocidad 1867 MHz
-  * Numero de (SO)DIMM: 4
+  * Total: 16 GB
+  * Tipo memoria: DDR4
+  * Velocidad 2400 MHz
+  * Numero de (SO)DIMM: 2
 * Tarjeta Gráfica
-  * Marca / Modelo: Nvidia GeForce GTX 980M
-  * Memoria dedicada: 8192 MB
+  * Marca / Modelo: AMD Radeon RX Vega 10 Graphics
+  * Memoria dedicada: 2 GB
   * Resolución: 1920 x 1080
 * Disco 1: 
-  * Marca: Samsung
+  * Marca: SK Hynix
   * Tipo: SSD
-  * Tamaño: 1TB
-  * Particiones: 4
-  * Sistema de archivos: EXT4, swap
+  * Tamaño: 512 GB
+  * Particiones: 
+  * Sistema de archivos: 
 
-* Dirección MAC de la tarjeta wifi: 5C:E0:C5:D7:EE:48 
-* Dirección IP (Interna, del router): 192.168.0.129
-* Dirección IP (Externa, del ISP): 190.45.122.34
+* Dirección MAC de la tarjeta wifi: D8-12-65-09-29-3F
+* Dirección IP (Interna, del router): 172.20.10.2
+* Dirección IP (Externa, del ISP): 172.20.10.2
 * Proveedor internet: VTR Banda Ancha S.A.
