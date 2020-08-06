@@ -8,7 +8,7 @@
 * Procesador:
   * Marca/Modelo: AMD Ryzen 7 3700U
   * Velocidad Base: 2.3 GHz
-  * Velocidad Máxima: 2.3 GHz
+  * Velocidad Máxima: 4 GHz
   * Numero de núcleos: 4 
   * Humero de hilos: 8
   * Arquitectura: x86_64
@@ -29,10 +29,10 @@
   * Marca: SK Hynix
   * Tipo: SSD
   * Tamaño: 512 GB
-  * Particiones: 
-  * Sistema de archivos: 
+  * Particiones: 1
+  * Sistema de archivos: NTFS
 
 * Dirección MAC de la tarjeta wifi: D8-12-65-09-29-3F
-* Dirección IP (Interna, del router): 172.20.10.2
-* Dirección IP (Externa, del ISP): 172.20.10.2
+* Dirección IP (Interna, del router): 192.168.0.6
+* Dirección IP (Externa, del ISP): 190.162.178.62
 * Proveedor internet: VTR Banda Ancha S.A.
