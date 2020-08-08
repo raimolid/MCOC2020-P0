@@ -39,6 +39,8 @@
 
 # Desempeño MATMUL
 
+![Alt Text](/Grafico A@B.png)
+
 * ¿Como difiere del gráfico del profesor/ayudante?: En todo en realidad, 
    ya que no alcance a graficar las 10 corridas y me falto poner los ticks 
    y etiquetas de los graficos. Aún así se presentan diferencias en el
@@ -60,3 +62,6 @@
 * ¿Qué versión de numpy está usando?: 1.8
 
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+Si, en algunos casos supera el 100%
+
+![Alt Text](/rendi% procesador.png)
