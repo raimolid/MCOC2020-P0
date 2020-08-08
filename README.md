@@ -39,11 +39,21 @@
 
 # Desempeño MATMUL
 
-* ¿Como difiere del gráfico del profesor/ayudante?
+* ¿Como difiere del gráfico del profesor/ayudante?: En todo en realidad, 
+   ya que no alcance a graficar las 10 corridas y me falto poner los ticks 
+   y etiquetas de los graficos. Aún así se presentan diferencias en el
+   grafico del tiempo v tamaño de matriz y memoria v tamaño de la matriz
 
-* ¿A qué se pueden deber las diferencias?
+* ¿A qué se pueden deber las diferencias? Las diferencias pueden tener su 
+   raíz, en el caso del tiempo, en la potencia del procesado o de algún otro 
+   componente del hardware, en el caso dela memoria, claramente el 
+   rendimiento se ve afectado por la cantidad de memoria del computador y 
+   las diferencias entre el computador del profesor/ayudante y el mio.
 
 * El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+  poque la memoria, va a ir variando proporcionalmente a como se ocupa su almacenamiento, y mientras más grande la matriz
+  más memoria ocupa. En el caso del tiempo no varia lineal, ya que este va a dependen de la cantidad de operaciones que pueden
+  existir y estas no varian linealmente necesariamente.
 
 * ¿Qué versión de python está usando?: 3.8
 
