@@ -65,3 +65,22 @@
 Si, en algunos casos supera el 100%
 
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_matmul.png)
+
+# Desempeño MIMATMUL
+
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Plot_mimatmul.png)
+
+* ¿Como difiere del gráfico del profesor/ayudante?: 
+
+* ¿A qué se pueden deber las diferencias? 
+
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+
+* ¿Qué versión de python está usando?: 3.8
+
+* ¿Qué versión de numpy está usando?: 1.8
+
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+Si, en algunos casos supera el 100%
+
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_mimatmul.png)
