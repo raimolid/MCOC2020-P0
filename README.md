@@ -52,17 +52,21 @@
    rendimiento se ve afectado por la cantidad de memoria del computador y 
    las diferencias entre el computador del profesor/ayudante y el mio.
 
-* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
-  poque la memoria, va a ir variando proporcionalmente a como se ocupa su almacenamiento, y mientras más grande la matriz
-  más memoria ocupa. En el caso del tiempo no varia lineal, ya que este va a dependen de la cantidad de operaciones que pueden
-  existir y estas no varian linealmente necesariamente.
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, 
+  pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+  Porque la memoria va a ir variando proporcionalmente a como se ocupa su 
+  almacenamiento, y mientras más grande la matriz más memoria ocupa.
+  Crece linealmente. En el caso del tiempo no varia lineal, ya que este va a 
+  depender de la cantidad de operaciones que pueden existir en el momento y estas no 
+  varian linealmente necesariamente.
 
 * ¿Qué versión de python está usando?: 3.8
 
 * ¿Qué versión de numpy está usando?: 1.8
 
-* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-Si, en algunos casos supera el 100%
+* Durante la ejecución de su código ¿se utiliza más de un procesador? 
+  Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+  Si, en algunos casos supera el 100%
 
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_matmul.png)
 
@@ -70,17 +74,30 @@ Si, en algunos casos supera el 100%
 
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Plot_mimatmul.png)
 
-* ¿Como difiere del gráfico del profesor/ayudante?: 
+* ¿Como difiere del gráfico del profesor/ayudante?: Difiere en la cantidad de 
+  matrices que ejecute. Si bien, hice las 10 corridas solicitadas, no logré hacer 
+  matrices NxN más grandes que N=500, en cambio, en el codigo del ayudante se 
+  ejecutaron hasta matrices de N=1000
 
-* ¿A qué se pueden deber las diferencias? 
+* ¿A qué se pueden deber las diferencias?: Se debe al gran tiempo que se tomaba el 
+  programa con la funcion nueva mimatmul en multiplicar matrices grandes, arriba de 
+  N=250. Tomando hasta N=500, me tomo alrededor de 40 min en ejecutar todo, por lo
+  que decidi implementarlo hasta ese límite, y que es lo que explica la diferencia
+  del largo de las curvas
 
-* El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+* El gráfico de uso de memoria es lineal con el tamaño de matriz, 
+  pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+  Porque la memoria va a ir variando proporcionalmente a como se ocupa su 
+  almacenamiento, y mientras más grande la matriz más memoria ocupa.
+  Crece linealmente. En el caso del tiempo no varia lineal, ya que este va a 
+  depender de la cantidad de operaciones que pueden existir en el momento y estas no 
+  varian linealmente necesariamente.
 
 * ¿Qué versión de python está usando?: 3.8
 
 * ¿Qué versión de numpy está usando?: 1.8
 
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
-Si, en algunos casos supera el 100%
+  Si, en algunos casos supera el 100%
 
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_mimatmul.png)
