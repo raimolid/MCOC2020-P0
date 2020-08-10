@@ -64,4 +64,4 @@
 * Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
 Si, en algunos casos supera el 100%
 
-![Alt Text](/rendi% procesador.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_matmul.png)
