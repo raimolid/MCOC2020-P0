@@ -37,7 +37,7 @@ for i in range(Ncorridas):
         fid.write(f"{N} {dt} {size}\n")
 
         print(f"Tiempo transcurrido = {dt} s")
-        print(f"Memoria usada = {mem} bytes")
+        print(f"Memoria usada = {size} bytes")
 
         fid.flush()
         
