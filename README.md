@@ -39,7 +39,7 @@
 
 # Desempeño MATMUL
 
-![Alt Text](/Grafico A@B.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Plot_matmul.png)
 
 * ¿Como difiere del gráfico del profesor/ayudante?: En todo en realidad, 
    ya que no alcance a graficar las 10 corridas y me falto poner los ticks 
