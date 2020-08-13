@@ -105,13 +105,13 @@
 # Desempeño INV
 ## Caso 1: numpy.linalg.inv()
 ### dtype=np.half
-* ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
+* ERROR: ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
 ### dtype=np.single
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_1_single.png)
 ### dtype=np.double
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_1_double.png)
 ### dtype=np.longdouble
-* ARRAY TYPE FLOAT64 UNSUPPORTED IN LINALG
+* ERROR: ARRAY TYPE FLOAT64 UNSUPPORTED IN LINALG
 
 ## Caso 2: scipy.linalg.inv(overwrite_a=False)
 ### dtype=np.half
