@@ -57,8 +57,8 @@
   Porque la memoria va a ir variando proporcionalmente a como se ocupa su 
   almacenamiento, y mientras más grande la matriz más memoria ocupa.
   Crece linealmente. En el caso del tiempo no varia lineal, ya que este va a 
-  depender de la cantidad de operaciones que pueden existir en el momento y estas no 
-  varian linealmente necesariamente.
+  depender de la cantidad de operaciones que pueden existir en el momento y estas 
+  no varian linealmente necesariamente.
 
 * ¿Qué versión de python está usando?: 3.8
 
@@ -90,14 +90,15 @@
   Porque la memoria va a ir variando proporcionalmente a como se ocupa su 
   almacenamiento, y mientras más grande la matriz más memoria ocupa.
   Crece linealmente. En el caso del tiempo no varia lineal, ya que este va a 
-  depender de la cantidad de operaciones que pueden existir en el momento y estas no 
-  varian linealmente necesariamente.
+  depender de la cantidad de operaciones que pueden existir en el momento y estas 
+  no varian linealmente necesariamente.
 
 * ¿Qué versión de python está usando?: 3.8
 
 * ¿Qué versión de numpy está usando?: 1.8
 
-* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
+* Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una 
+  imagen de su uso de procesador durante alguna corrida para confirmar. 
   Si, en algunos casos supera el 100%
 
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_mimatmul.png)
@@ -132,3 +133,23 @@
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_double.png)
 ### dtype=np.longdouble
 ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_longdouble.png)
+
+* Es evidente y comprobable que en los 4 tipos de datos: Half, single, double y 
+  longdouble hay diferencias en cuanto a la precisión de números, siendo half el menos
+  preciso, aguantando números no tan extensos, y longdouble el más preciso. Con esa 
+  lógica, se observa un proporcionalidad en cuanto a un mayor tiempo de procesamiento 
+  en los tipos de datos más precisos y un menor tiempo en los menos precisos. Por 
+  ejemplo, en el caso 3 se observó que para matrices (10.000 x 10.000), el dtype=np.half
+  demoró 39,218 (s) en calcular la inversa, en cambio el dtype=np.longdouble, demoró
+  58,675 (s) y los 2 ocuparon 1,6 GB se memoria.Esre tipo de ejemplos se repitio, por lo
+  que es posible inferir que +precision = +tiempo pero no necesariamente +memoria.
+* ¿Qué algoritmo de inversión cree que utiliza cada método?
+   Se utiliza la solución analítica, de la regla de Cramer y teorema de Laplace, que
+   basa el calculo del determinante de matrices grandes en la descomposición de sumas 
+   de matrices más pequeñas. 
+* ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño 
+  en cada caso? El paralelismo es una funcionalidad que permite realizar operaciones
+  simultaneamente y buscar información en los distintos niveles de cachés del procesador,
+  en mi caso tengo 3 niveles: L1: 384 KB, L2: 2 MB, L3: 4 MB, que se muestran en los 
+  gráficos con lineas horizontales negras. Estas permiten regular la eficiencia con la 
+  que se opera, las de menor memoria operan más rápido, como la caché 3.
