@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 Ns=[2,5,10,12,15,20,30,40,45,50,55,60,75,100,125,160,
     200,250,350,500,600,800,1000,2000,5000,10000]
 
-#CREANDO ARCHIVO DE TEXTO 
+#CREANDO ARCHIVO D TEXTO 
 dts=[]
 mem=[]
 name=("timing_caso_3_longdouble.txt")
