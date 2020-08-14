@@ -72,7 +72,7 @@
 
 # Desempeño MIMATMUL
 
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Plot_mimatmul.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega3/Plot_mimatmul.png)
 
 * ¿Como difiere del gráfico del profesor/ayudante?: Difiere en la cantidad de 
   matrices que ejecute. Si bien, hice las 10 corridas solicitadas, no logré hacer 
@@ -101,7 +101,7 @@
   imagen de su uso de procesador durante alguna corrida para confirmar. 
   Si, en algunos casos supera el 100%
 
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_mimatmul.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master7Entrega3/Proc_mimatmul.png)
 
 # Desempeño INV
 ## Caso 1: numpy.linalg.inv()
