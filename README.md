@@ -39,7 +39,7 @@
 
 # Desempeño MATMUL
 
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Plot_matmul.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega1-2/Plot_matmul.png)
 
 * ¿Como difiere del gráfico del profesor/ayudante?: En todo en realidad, 
    ya que no alcance a graficar las 10 corridas y me falto poner los ticks 
@@ -68,7 +68,7 @@
   Muestre una imagen de su uso de procesador durante alguna corrida para confirmar. 
   Si, en algunos casos supera el 100%
 
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Proc_matmul.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega1-2/Proc_matmul.png)
 
 # Desempeño MIMATMUL
 
