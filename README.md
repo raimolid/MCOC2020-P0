@@ -108,31 +108,31 @@
 ### dtype=np.half
 * ERROR: ARRAY TYPE FLOAT16 UNSUPPORTED IN LINALG
 ### dtype=np.single
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_1_single.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_1_single.png)
 ### dtype=np.double
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_1_double.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_1_double.png)
 ### dtype=np.longdouble
 * ERROR: ARRAY TYPE FLOAT64 UNSUPPORTED IN LINALG
 
 ## Caso 2: scipy.linalg.inv(overwrite_a=False)
 ### dtype=np.half
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_2_half.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_2_half.png)
 ### dtype=np.single
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_2_single.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_2_single.png)
 ### dtype=np.double
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_2_double.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_2_double.png)
 ### dtype=np.longdouble
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_2_longdouble.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_2_longdouble.png)
 
 ## Caso 3: scipy.linalg.inv(overwrite_a=True)
 ### dtype=np.half
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_half.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_3_half.png)
 ### dtype=np.single
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_single.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_3_single.png)
 ### dtype=np.double
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_double.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_3_double.png)
 ### dtype=np.longdouble
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/plot_3_longdouble.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega4/plot_3_longdouble.png)
 
 * Es evidente y comprobable que en los 4 tipos de datos: Half, single, double y 
   longdouble hay diferencias en cuanto a la precisión de números, siendo half el menos
