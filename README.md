@@ -153,3 +153,7 @@
   en mi caso tengo 3 niveles: L1: 384 KB, L2: 2 MB, L3: 4 MB, que se muestran en los 
   gráficos con lineas horizontales negras. Estas permiten regular la eficiencia con la 
   que se opera, las de menor memoria operan más rápido, como la caché 3.
+  
+  # Desempeño Ax=b
+  
+  ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega6/plot6.png)
