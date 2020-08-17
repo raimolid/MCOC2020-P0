@@ -101,7 +101,7 @@
   imagen de su uso de procesador durante alguna corrida para confirmar. 
   Si, en algunos casos supera el 100%
 
-![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master7Entrega3/Proc_mimatmul.png)
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega3/Proc_mimatmul.png)
 
 # Desempeño INV
 ## Caso 1: numpy.linalg.inv()
@@ -156,4 +156,18 @@
   
   # Desempeño Ax=b
   
+ * Para este caso se resolvio la ecuación Ax=b donde A era la matriz laplaciana creada
+   anteriormente y b una matriz de 1. Para ello se utilizaron distintos algortimos o
+   métodos dentro del código y se calcularon los tiempos que se demoraban.
+  
   ![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega6/plot6.png)
+  
+ * Se observa que el algoritmo que más se tarda en resolver matrices grandes es el de 
+   invertir la matriz y luego multiplicar. Este método se distancia claramente de los
+   otros, que consisten en solvers proporcionados por las librerías numpy y scipy.
+   Se puede notar también que para las matrices más grandes que se utilizaron, N=10000
+   el algoritmo que demoró menos fue el Solver scipy.linalg usando matrices definidas 
+   positivas ('pos'). Parámetro que se le entrega al solver y sirve para comparar con
+   otros como por ejemplo 'sym' para usar matrices simétricas, que tomó más tiempo.
+   También se probó sobreescribiendo los datos con 'overwrite_a' pero aún así, el que 
+   tomó menos tiempo fue el mencionado algoritmo Linalg.solve(A,B,assume_a="pos") de scipy.
