@@ -171,3 +171,84 @@
    otros como por ejemplo 'sym' para usar matrices simétricas, que tomó más tiempo.
    También se probó sobreescribiendo los datos con 'overwrite_a' pero aún así, el que 
    tomó menos tiempo fue el mencionado algoritmo Linalg.solve(A,B,assume_a="pos") de scipy.
+   
+# Matrices dispersas y complejidad computacional
+
+* En esta sección se vuelve a analizar el desempeño del procesador 
+  para 3 casos: mutliplicación de matrices, solución de sistema de 
+  ecuaciones e inversión de matrices, pero agregando, al análisis,
+  el uso de matrices dispersas y su comparación con las matrices llenas.
+  Para los 2 tipos de matrices se utilizó double como tipo de dato.
+
+* Para crear las matrices laplacianas utilizadas, se elaboró un archivo
+  con 2 funciones: matriz_laplaciana_llena y matriz_laplaciana_dispersa
+
+## Algoritmo 1: Complejidad algorítmica de MATMUL
+
+### Matmul con matriz llena
+plot_matmul_llena
+
+### Matmul con matriz dispersa
+plot_matmul_dispersa
+
+* Para los 2 casos se usó la función A@B que multiplica matrices, con
+  A y B matrices laplacianas.
+
+* Se puede apreciar una gran diferencia en los tiempos para los 2 matrices.
+  Se nota una gran disminución de tiempo al usar matrices dispersas.
+  En el caso de tiempo de ensamblado, mientras que la matriz llena, tiende
+  a una complejidad cuadrática al N infinito, la matriz dispersa se mantiene
+  constante en todo tamaño de matriz. En el tiempo de solución, pareciera 
+  haber un cambio mayor, ya que, ahí en el caso asintotico la matriz dispersa tiende
+  a una complejidad lineal, mientras que la matriz llena tiende a una complejidad
+  levemente mejor que la O(N^3)
+
+## Algoritmo 2: Complejidad algorítmica de SOLVE
+
+### Solve con matriz llena
+plot_solve_llena
+* Para resolver Ax=b, se usó la función de scipy sp.linalg.solve para matrices definidas positivas
+y sin overwrite, ya que fue la de mejor desempeño en la Entrega 6.
+
+### Solve con matriz dispersa
+plot_solve_dispersa
+* Al igual que en en caso anterior, se usó el solver de scipy, pero especial
+  para matrices dispersas: sp.sparse.linalg.spsolve.
+
+* Para este algoritmo, sucede algo muy similar al del anterior Matmul, en cuanto a la 
+  complejidad computacional que presenta. Se observa un tiempo constante para el ensamblado
+  de matrices dispersas, no así para las matrices llenas, que se estabilizan asintoticamente
+  en una complejidad cuadrática. En cuanto al tiempo de solución, el solver para matrices 
+  dispersas se demora un tiempo menor y en N->inf tiende a una complejidad lineal. En cambio,
+  el solver para matriz llena, tiende una complejidad levemente mejor que O(N^3).
+
+## Algoritmo 3: Complejidad algorítmica de INV
+
+### Inv con matriz llena
+plot_inv_llena
+* Para este caso se uso el solver de numpy np.linalg.inv(A),ya que, fue 
+el de mejor desempeño para el dtype double en el análisis de la Entrega 4.
+
+### Inv con matriz dispersa
+plot_inv_dispersa
+* En este caso, see usó el equivalente para matrices dispersas de scipy,
+  sp.sparse.linalg.inv(A), ya que era el de mejor performance. Además, se llevo
+  a los datos usados en la matriz dispersa A (creados con la función 
+  matriz_laplaciana_dispersa) a la función sparse.csc_matrix(A) por "sugerencia"
+  de python.
+
+* En este algoritmo se aprecia que, para el caso de tiempo de ensamblado, mientras 
+  que la matriz llena, tiende a una complejidad cuadrática con N al infinito, la matriz dispersa 
+  se mantiene constante en todo tamaño de matriz, solo en los últimos casos de matrices más grandes,
+  pareciera una tendencia a la complejidad lineal. En el tiempo de solución, se presenta un cambio,
+  con respecto a los otros algoritmos, ya que, en el caso asintotico la matriz dispersa tiende
+  a una complejidad cuadrática y la matriz llena tiende a una complejidad levemente mejor que la O(N^3)
+  para N->inf.
+
+* En cuánto a la estabilidad, se observa que todos los algoritmos se estabilizan en matrices grandes,
+  generalmente para mayores a N=2000, y en matrices menores a eso, se presentan diferencias entre las distintas
+  corridas del código (que fueron 5 en este caso) y su complejidad computacional.
+
+* La matrices dispersas disminuyen notablemente el tiempo de ensamblaje y solución en comparación con las
+  matrices llenas. Con respecto a ello, se puede concluir que el tamaño de la matrices, por un lado aumenta el tiempo de 
+  procesamiento, y por otro, estabiliza la complejidad computacional asintoticamente (En N grandes).
