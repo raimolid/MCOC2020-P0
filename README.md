@@ -186,10 +186,10 @@
 ## Algoritmo 1: Complejidad algorítmica de MATMUL
 
 ### Matmul con matriz llena
-plot_matmul_llena
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_matmul_llena.png)
 
 ### Matmul con matriz dispersa
-plot_matmul_dispersa
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_matmul_dispersa.png)
 
 * Para los 2 casos se usó la función A@B que multiplica matrices, con
   A y B matrices laplacianas.
@@ -206,12 +206,12 @@ plot_matmul_dispersa
 ## Algoritmo 2: Complejidad algorítmica de SOLVE
 
 ### Solve con matriz llena
-plot_solve_llena
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_solve_llena.png)
 * Para resolver Ax=b, se usó la función de scipy sp.linalg.solve para matrices definidas positivas
 y sin overwrite, ya que fue la de mejor desempeño en la Entrega 6.
 
 ### Solve con matriz dispersa
-plot_solve_dispersa
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_solve_dispersa.png)
 * Al igual que en en caso anterior, se usó el solver de scipy, pero especial
   para matrices dispersas: sp.sparse.linalg.spsolve.
 
@@ -225,12 +225,12 @@ plot_solve_dispersa
 ## Algoritmo 3: Complejidad algorítmica de INV
 
 ### Inv con matriz llena
-plot_inv_llena
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_inv_llena.png)
 * Para este caso se uso el solver de numpy np.linalg.inv(A),ya que, fue 
 el de mejor desempeño para el dtype double en el análisis de la Entrega 4.
 
 ### Inv con matriz dispersa
-plot_inv_dispersa
+![Alt Text](https://github.com/raimolid/MCOC2020-P0/blob/master/Entrega7/plot_inv_dispersa.png)
 * En este caso, see usó el equivalente para matrices dispersas de scipy,
   sp.sparse.linalg.inv(A), ya que era el de mejor performance. Además, se llevo
   a los datos usados en la matriz dispersa A (creados con la función 
