@@ -185,6 +185,22 @@
 * Para crear las matrices laplacianas utilizadas, se elaboró un archivo
   con 2 funciones: matriz_laplaciana_llena y matriz_laplaciana_dispersa
 
+```
+import numpy as np
+
+def matriz_laplaciana_llena(N,t=np.float32):
+    m=np.eye(N,N,dtype=t)-np.eye(N,N,1,dtype=t)
+    return m+m.T
+
+
+from scipy.sparse import eye
+
+def matriz_laplaciana_dispersa(N,t=np.float32):
+    m=eye(N,N,dtype=t)-eye(N,N,1,dtype=t)
+    return m+m.T 
+    
+```
+
 ## Algoritmo 1: Complejidad algorítmica de MATMUL
 
 ### Matmul con matriz llena
