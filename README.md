@@ -172,6 +172,8 @@
    También se probó sobreescribiendo los datos con 'overwrite_a' pero aún así, el que 
    tomó menos tiempo fue el mencionado algoritmo Linalg.solve(A,B,assume_a="pos") de scipy.
    
+
+
 # Matrices dispersas y complejidad computacional
 
 * En esta sección se vuelve a analizar el desempeño del procesador 
@@ -244,6 +246,8 @@ el de mejor desempeño para el dtype double en el análisis de la Entrega 4.
   con respecto a los otros algoritmos, ya que, en el caso asintotico la matriz dispersa tiende
   a una complejidad cuadrática y la matriz llena tiende a una complejidad levemente mejor que la O(N^3)
   para N->inf.
+
+
 
 * En cuánto a la estabilidad, se observa que todos los algoritmos se estabilizan en matrices grandes,
   generalmente para mayores a N=2000, y en matrices menores a eso, se presentan diferencias entre las distintas
